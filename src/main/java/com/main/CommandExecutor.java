@@ -89,7 +89,7 @@ public class CommandExecutor {
             case "status":
                 if (Objects.isNull(parkingLot))
                     throw new ParkingException(PARKING_LOT_NOT_FOUND);
-
+                System.out.println("Slot No.    Registration No    Colour");
                 parkingLot.getStatus()
                         .forEach(status -> System.out.println(status.toString()));
                 break;

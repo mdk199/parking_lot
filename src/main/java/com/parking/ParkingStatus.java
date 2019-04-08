@@ -29,8 +29,8 @@ public class ParkingStatus {
 
     @Override
     public String toString() {
-        return new StringBuilder().append(slotNumber).append("   ")
-                .append(registrationNumber).append("   ")
+        return new StringBuilder().append(slotNumber).append("           ")
+                .append(registrationNumber).append("      ")
                 .append(colour).toString();
     }
 }
