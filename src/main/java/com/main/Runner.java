@@ -1,7 +1,5 @@
 package com.main;
 
-import com.exception.ParkingException;
-
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Objects;
@@ -29,7 +27,7 @@ public class Runner {
                     String command = inputReader.nextLine();
                     try {
                         commandExecutor.execute(command.split(SPLITTER));
-                    } catch (ParkingException e) {
+                    } catch (Exception e) {
                         System.out.println(e.getMessage());
                     }
                 }
@@ -46,7 +44,7 @@ public class Runner {
 
                 try {
                     commandExecutor.execute(command.split(SPLITTER));
-                } catch (ParkingException e) {
+                } catch (Exception e) {
                     System.out.println(e.getMessage());
                 }
             }

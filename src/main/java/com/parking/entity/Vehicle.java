@@ -1,4 +1,4 @@
-package com.parking;
+package com.parking.entity;
 
 public class Vehicle {
 
@@ -8,21 +8,15 @@ public class Vehicle {
 
     private String owner;
 
-    private ParkingType parkingType;
-
-    private final String DEFAULT_TYPE = "CAR";
-
     public Vehicle(String registrationNumber, String color) {
         this.registrationNumber = registrationNumber;
         this.color = color;
-        this.parkingType = new ParkingType(DEFAULT_TYPE);
     }
 
     public Vehicle(String registrationNumber, String color, String owner) {
         this.registrationNumber = registrationNumber;
         this.color = color;
         this.owner = owner;
-        this.parkingType = new ParkingType(DEFAULT_TYPE);
     }
 
     public String getRegistrationNumber() {
@@ -35,15 +29,6 @@ public class Vehicle {
 
     public String getOwner() {
         return owner;
-    }
-
-    public ParkingType getParkingType() {
-        return parkingType;
-    }
-
-    public Vehicle setParkingType(ParkingType parkingType) {
-        this.parkingType = parkingType;
-        return this;
     }
 
     @Override

@@ -1,4 +1,4 @@
-package com.exception;
+package com.parking.exception;
 
 public class ErrorMessage {
 
@@ -11,8 +11,6 @@ public class ErrorMessage {
     public static final String PARKING_SPACE_LIMIT_EXCEEDED = "Sorry, parking lot is full";
 
     public static final String VEHICLE_NOT_FOUND = "Not found";
-
-    public static final String VEHICLE_ALREADY_PARKED = "VEHICLE WITH SAME REG. NUMBER {0} ALREADY PARKED";
 
     public static final String INVALID_COMMAND_FORMAT = "INVALID COMMAND FORMAT FOR: {0}, IT SHOULD BE `{0} {1}`";
 

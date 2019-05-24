@@ -1,14 +1,14 @@
-package com.parking;
+package com.parking.response;
 
 public class ParkingStatus {
 
-    private Long slotNumber;
+    private Integer slotNumber;
 
     private String registrationNumber;
 
     private String colour;
 
-    public ParkingStatus(Long slotNumber, String registrationNumber, String colour) {
+    public ParkingStatus(Integer slotNumber, String registrationNumber, String colour) {
         this.slotNumber = slotNumber;
         this.registrationNumber = registrationNumber;
         this.colour = colour;
