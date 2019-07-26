@@ -1,8 +1,8 @@
-# PARKING LOT
-This code is developed only to support parking lot for cars but is extensible enough to support parking of any type and dimensions. 
-It has all proper exception handling for various cases like `same registration number vehicle cannot be parked twice`.
+## PARKING LOT
+This code is developed only to support parking lot with for cars but is extensible enough to support parking of any type and dimensions. 
+It has all proper exception handling for various cases.
 
-## Getting Started
+### Getting Started
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
 ### Pre-requisites
@@ -29,17 +29,17 @@ java -jar parking-lot-1.0.0-SNAPSHOT.jar
 
 ### Sample input
 ```
-create_parking_lot 6
-park KA-01-HH-1234 White
-park KA-01-HH-9999 White
-park KA-01-BB-0001 Black
-park KA-01-HH-7777 Red
-park KA-01-HH-2701 Blue
-park KA-01-HH-3141 Black
+create_parking_lot 6 2
+park KA-01-HH-1234 White 1
+park KA-01-HH-9999 White 2
+park KA-01-BB-0001 Black 2
+park KA-01-HH-7777 Red 1
+park KA-01-HH-2701 Blue 1
+park KA-01-HH-3141 Black 1
 leave 4
 status
-park KA-01-P-333 White
-park DL-12-AA-9999 White
+park KA-01-P-333 White 1
+park DL-12-AA-9999 White 2
 registration_numbers_for_cars_with_colour White
 slot_numbers_for_cars_with_colour White
 slot_number_for_registration_number KA-01-HH-3141

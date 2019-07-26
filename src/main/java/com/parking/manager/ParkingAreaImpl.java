@@ -35,7 +35,7 @@ public class ParkingAreaImpl implements ParkingArea{
         if (Objects.isNull(vehicle))
             throw new ManagerException(ErrorMessage.VEHICLE_NOT_FOUND);
         registrationNumberToSlot.remove(vehicle.getRegistrationNumber());
-        parkingSlots[slotNumber].clear();
+        parkingSlots[slotNumber - 1].clear();
     }
 
     @Override
@@ -54,7 +54,7 @@ public class ParkingAreaImpl implements ParkingArea{
     @Override
     public int getSlotNumber(String registrationNumber) throws ManagerException {
         if (Objects.isNull(registrationNumberToSlot.get(registrationNumber.toUpperCase())))
-            throw new ManagerException(ErrorMessage.INVALID_VEHICLE_REGISTRATION_NUMBER, registrationNumber);
+            throw new ManagerException(ErrorMessage.VEHICLE_NOT_FOUND);
         return registrationNumberToSlot.get(registrationNumber.toUpperCase());
     }
 
